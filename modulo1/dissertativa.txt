@@ -1,0 +1,43 @@
+#### Exercícios 1 e 2
+
+Resposta:
+C (programação orientada a objetos)
+
+Justificativa: 
+Levando em conta a estrutura do sistema e a forma como suas entidades se relacionam, a abordagem mais adequada para desenvolver o sistema de gerenciamento da biblioteca seria a programação orientada a objetos. Esse paradigma facilita uma representação mais intuitiva e eficaz dos elementos do sistema e de como eles se conectam. Com a programação orientada a objetos, é possível representar cada entidade como um objeto que possui características próprias e comportamentos específicos. Além disso, ela favorece a reutilização de código por meio de mecanismos como herança e polimorfismo. Esse estilo de programação organiza o código com base nos objetos e nas interações entre eles, o que contribui para uma maior clareza e facilidade na manutenção do sistema.
+
+
+#### Exercício 3
+
+Classes
+
+    Pessoa:
+	    nome: string
+	    lista de livros: Livro[] (array de objetos do tipo Livro)
+
+    Empréstimo:
+	    data de retirada: Date
+	    data de devolução: Date
+	    livro: Livro
+	    usuário: Usuario
+
+    Usuario:
+	    idade: int
+	    histórico de empréstimos: Emprestimo[] (array de objetos do tipo Emprestimo)
+
+    Livro:
+	    título: string
+	    autor: Autor
+	    gênero: string
+
+    Autor:
+	    nacionalidade: string
+
+Relações
+    1 Autor é 1 pessoa
+    1 usuário é 1 pessoa
+    1 Livro possui 1 Autor principal
+    Cada Autor pode escrever N livros
+    Cada Livro pode ser emprestado N vezes mas não pode estar em mais de 1 empréstimo por vez
+    Cada Usuário pode realizar N Emprestimos por vez
+    Cada Emprestimo envolve pelo menos 1 Livro e apenas 1 Usuario
